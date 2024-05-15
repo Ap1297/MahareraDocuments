@@ -1,0 +1,4387 @@
+{
+	"info": {
+		"_postman_id": "f17f7352-a64f-4581-b390-aae4e83c1689",
+		"name": "MahaRERA Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26037496"
+	},
+	"item": [
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "Masters",
+					"item": [
+						{
+							"name": "GetState",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"LangID\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/MahaRERAAPI/api/Projects/GetState",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"MahaRERAAPI",
+										"api",
+										"Projects",
+										"GetState"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetDistricts",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"LangID\" : 1,\r\n    \"stateCode\":27\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/MahaRERAAPI/api/Projects/GetDistricts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"MahaRERAAPI",
+										"api",
+										"Projects",
+										"GetDistricts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetDivisions",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Statecode\": 27,\r\n    \"LangID\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/MahaRERAAPI/api/Projects/GetDivisions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"MahaRERAAPI",
+										"api",
+										"Projects",
+										"GetDivisions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetTalukas",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"DistrictCode\": 525,\r\n    \"LangID\" : 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/GetTalukaAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"GetTalukaAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetVillageAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"DistrictCode\": 525,\r\n    \"LangID\" : 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/GetVillageAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"GetVillageAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetProjectMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/GetProjectMasterAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"GetProjectMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetUnitMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/GetUnitMasterAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"GetUnitMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetApartmentMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/GetUnitMasterAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"GetUnitMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetCoramDetailsMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/GetCoramDetailsMasterAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"GetCoramDetailsMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAmenitiesMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/GetAmenitiesMasterAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"GetAmenitiesMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetComplainantMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/GetAmenitiesAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"GetAmenitiesAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "HomeSearch",
+					"item": [
+						{
+							"name": "FetchHomeProjectsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectTypeId\": 12,\r\n    \"roleId\": 1,\r\n    \"projectName\": \"\",\r\n    \"location\": \"\",\r\n    \"AgentRegistrationNo\":\"\",\r\n    \"apartmentTypeId\": 0,\r\n    \"completionDate\": \"\",\r\n    \"districtId\": 0,\r\n    \"stateId\": 0,\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 20\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchHomeProjectsAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchHomeProjectsAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchHomePromotersAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectTypeId\": 12,\r\n    \"roleId\": 1,\r\n    \"name\": \"\",\r\n    \"locationName\": \"Pune\",\r\n    \"completionDate\": \"\",\r\n    \"ApartmentTypeIds\" : [1149],\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchHomePromotersAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchHomePromotersAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchHomeAgentsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectTypeId\": 0,\r\n  \"roleId\": 2,\r\n  \"agentTypeId\": 0,\r\n  \"agentName\": \"\",\r\n  \"agentRegNo\": \"\",\r\n  \"agentNameOrRegNo\": \"\",\r\n  \"pincode\": \"\",\r\n  \"locationName\": \"\",\r\n  \"completionDate\": \"\",\r\n  \"projectName\": \"\",\r\n  \"projectRegistrationNo\": \"\",\r\n  \"projectNameRegNo\": \"\",\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchHomeAgentsAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchHomeAgentsAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchHomeComplaintsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"complaintNo\": \"\",\r\n  \"projectName\": \"\",\r\n  \"coram\": 0,\r\n  \"completionDate\": \"\",\r\n  \"certiNo\": \"\",\r\n  \"complaintStatus\": \"\",\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchHomeComplaintsAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchHomeComplaintsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AdvancedSearch",
+					"item": [
+						{
+							"name": "FetchAdvancedProjectsSearchAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IsProjectRevoked\": 0,\r\n    \"projectTypeId\": 0,\r\n    \"roleId\": 1,\r\n    \"projectName\": \"\",\r\n    \"promoterName\": \"\",\r\n    \"projRegistrationNo\": \"\",\r\n    \"agentRegistrationNo\": \"\",\r\n    \"pinCode\": \"\",\r\n    \"districtId\": 519,\r\n    \"stateId\": 0,\r\n    \"divisionIds\": [],\r\n    \"projectTypeIds\": [],\r\n    \"promoterNames\": [],\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 10,\r\n    \"completionDate\": \"\",\r\n    \"completionPeriod\": [],\r\n    \"location\": \"\",\r\n    \"carpetAreas\": [],\r\n    \"completionPercentages\": [],\r\n    \"apartmentTypeIds\": [],\r\n    \"amenities\": [],\r\n    \"agentName\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchAdvancedProjectsSearchAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedProjectsSearchAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAdvancedPromoterSearchAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"projectTypeId\": 0,\r\n    \"roleId\": 1,\r\n    \"name\": \"\",\r\n    \"projRegistrationNo\": \"\",\r\n    \"pinCode\": \"\",\r\n    \"locationName\": \"\",\r\n    \"completionDate\": \"\",\r\n    \"PageIndex\": 1,\r\n    \"PageSize\": 10,\r\n    \"promoterNames\": [],\r\n    \"carpetAreas\": [],\r\n    \"completionPeriod\": [],\r\n    \"apartmentTypeIds\": [],\r\n    \"amenities\": [],\r\n    \"agentName\": \"\",\r\n    \"IsProjectRevoked\": 0,\r\n    \"DistrictId\": 0,\r\n    \"StateId\": 10,\r\n    \"divisionId\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchAdvancedPromoterSearchAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedPromoterSearchAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAdvancedAgentSearchAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectTypeId\": 0,\r\n  \"roleId\": 2,\r\n  \"agentTypeId\": 0,\r\n  \"agentName\": \"\",\r\n  \"agentRegNo\": \"\",\r\n  \"agentNameOrRegNo\": \"\",\r\n  \"pincode\": \"488789\",\r\n  \"districtId\": 0,\r\n  \"stateId\": 0,\r\n  \"talukaId\":0,\r\n  \"divisionId\": 6,\r\n  \"locationName\": \"\",\r\n  \"completionDate\": \"\",\r\n  \"projectName\": \"\",\r\n  \"projectRegistrationNo\": \"\",\r\n  \"projectNameRegNo\": \"\",\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10,\r\n  \"carpetAreas\": [],\r\n  \"completionPeriod\": [],\r\n  \"apartmentTypeIds\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchAdvancedAgentSearchAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedAgentSearchAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAdvancedComplaintSearchAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"0\",\r\n    \"complaintNo\": \"\",\r\n    \"certiNo\": \"\",\r\n    \"rullJudgeDate_From\": \"\",\r\n    \"ruleJudgeDate_To\": \"\",\r\n    \"complainantName\": \"\",\r\n    \"respondentName\": \"\",\r\n    \"pageindex\": 1,\r\n    \"pagesize\": 100,\r\n    \"state\": \"\",\r\n    \"isSourceComplaint\": 0,\r\n    \"isConcilliation\": 0,\r\n    \"sourceComplaintNo\": \"\",\r\n    \"sourceComplaintName\": \"\",\r\n    \"projectName\": \"\",\r\n    \"district\": 0,\r\n    \"division\": 0,\r\n    \"coram\": 0,\r\n    \"completionDate\": \"\",\r\n    \"complaintType\": 1,\r\n    \"order\": 0,\r\n    \"agentName\": \"\",\r\n    \"promoterName\": \"\",\r\n    \"flag\": \"Home\",\r\n    \"location\": \"\",\r\n    \"completionPeriod\": 0,\r\n    \"complaintStatus\": \"\",\r\n    \"complaintStatusId\": 0,\r\n    \"carpetAreaMin\": 0,\r\n    \"carpetAreaMax\": 0,\r\n    \"apartmentTypeId\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchAdvancedComplaintSearchAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedComplaintSearchAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Complaints",
+					"item": [
+						{
+							"name": "FetchComplaintsProjectWiseAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectName\": \"\",\r\n  \"flag\": \"ProjectCount\",\r\n  \"division\": 6,\r\n  \"district\": 529,\r\n  \"pageindex\": 1,\r\n  \"pagesize\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchComplaintsProjectWiseCountAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsProjectWiseCountAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchComplaintsProjectWiseAsync Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectId\": 10157,\r\n  \"flag\": \"\",\r\n\"district\": 529,\r\n   \"pageindex\": 1,\r\n  \"pagesize\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchComplaintsProjectWiseDetailsAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsProjectWiseDetailsAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchComplaintsPromoterWiseAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"promoterName\": \"\",\r\n  \"flag\": \"\",\r\n  \"division\": \"6\",\r\n  \"district\": \"529\",\r\n  \"pageindex\": 1,\r\n  \"pagesize\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchComplaintsPromoterWiseCountAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsPromoterWiseCountAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchComplaintsPromoterWiseAsync Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"\",\r\n  \"PromoterUserProfileId\": 76732,\r\n  \"District\": \"0\",\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 100,\r\n  \"promoterName\":\"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchComplaintsPromoterWiseDetailsAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsPromoterWiseDetailsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Docs",
+					"item": [
+						{
+							"name": "FetchProjectsDocsCertificateAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocProjectCert\",\r\n  \"divisionId\": 5,\r\n  \"projectId\": 6\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectsDocsCertificateAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectsDocsCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectsDocsExtCertificateAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocProjectExtCert\",\r\n  \"divisionId\": 4,\r\n  \"projectId\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectsDocsExtCertificateAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectsDocsExtCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectsDocsExtCertificateAsyncView",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocProjectHSMExtCert\",\r\n  \"divisionId\": 6,\r\n  \"projectId\": 29\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectsDocsExtCertificateAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectsDocsExtCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchComplaintsDocsCertificateAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocComplaintNonExecOrder\",\r\n  \"divisionId\": 3,\r\n  \"complaintId\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchComplaintsDocsCertificateAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsDocsCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAgentsDocsCertificateAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocAgentCert\",\r\n  \"divisionId\": 2,\r\n  \"projectId\": 10154\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchAgentsDocsCertificateAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchAgentsDocsCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAgentsDocsCertificateAsyncView",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocAgentViewCert\",\r\n  \"divisionId\": 2,\r\n  \"projectId\": 10154\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchAgentsDocsCertificateAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchAgentsDocsCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectsApplicationsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectName\": \"Galaxy Project\",\r\n  \"projectID\": 1,\r\n  \"division\": \"2\",\r\n  \"userID\": 8,\r\n  \"roleID\": 1,\r\n  \"approvalID\": 2596,\r\n  \"characterD\": \"2\",\r\n  \"extAppID\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectsApplicationsAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectsApplicationsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RTI",
+					"item": [
+						{
+							"name": "FetchRTIAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"pageindex\": 2,\r\n  \"pagesize\": 10,\r\n  \"rtiPublishedFromDate\": \"2017-01-01\",\r\n  \"rtiPublishedToDate\": \"2022-12-01\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchRTIAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchRTIAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchRTIDocs",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 11\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchRTIDocs",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchRTIDocs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CauseList",
+					"item": [
+						{
+							"name": "FetchDailyCauseListAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date\": \"2022-02-28\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchDailyCauseListAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchDailyCauseListAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchMonthlyCauseListAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"fromDate\": \"2023-03-01\",\r\n  \"toDate\": \"2023-03-13\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchMonthlyCauseListAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchMonthlyCauseListAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ProjectsOnMap",
+					"item": [
+						{
+							"name": "FetchProjectsOnMap",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"pageindex\": 1,\r\n  \"pagesize\": 100,\r\n  \"langId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectsOnMap",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectsOnMap"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "OrdersJudgements",
+					"item": [
+						{
+							"name": "FetchOrdersRulingsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"\",\r\n    \"complaintNo\": \"\",\r\n    \"certiNo\": \"\",\r\n    \"rullJudgeDate_From\": \"2020-12-14\",\r\n    \"ruleJudgeDate_To\": \"2022-12-14\",\r\n    \"complainantName\": \"\",\r\n    \"respondentName\": \"\",\r\n    \"pageindex\": 1,\r\n    \"pagesize\": 10,\r\n    \"state\": \"\",\r\n    \"isSourceComplaint\": 1,\r\n    \"sourceComplaintNo\": \"\",\r\n    \"sourceComplaintName\": \"\",\r\n    \"projectName\": \"\",\r\n    \"districtId\": 0,\r\n    \"divisionId\": 0,\r\n    \"coram\": 0,\r\n    \"complaintID\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchOrdersRulingsAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchOrdersRulingsAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchOrdersRulingMahareraAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"\",\r\n    \"complaintNo\": \"\",\r\n    \"certiNo\": \"\",\r\n    \"rullJudgeDate_From\": \"\",\r\n    \"ruleJudgeDate_To\": \"\",\r\n    \"complainantName\": \"\",\r\n    \"respondentName\": \"\",\r\n    \"pageindex\": 1,\r\n    \"pagesize\": 100,\r\n    \"state\": \"string\",\r\n    \"isSourceComplaint\": 0,\r\n    \"sourceComplaintNo\": \"\",\r\n    \"sourceComplaintName\": \"\",\r\n    \"projectName\": \"\",\r\n    \"district\": 0,\r\n    \"division\": 5,\r\n    \"coram\": 0,\r\n    \"complaintID\": 0,\r\n    \"orderType\": 60\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchOrdersRulingMahareraAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchOrdersRulingMahareraAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchOrdersJudgementsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"\",\r\n    \"complaintNo\": \"\",\r\n    \"certiNo\": \"\",\r\n    \"rullJudgeDate_From\": \"2020-12-14\",\r\n    \"ruleJudgeDate_To\": \"2022-12-14\",\r\n    \"complainantName\": \"\",\r\n    \"respondentName\": \"\",\r\n    \"pageindex\": 1,\r\n    \"pagesize\": 10,\r\n    \"state\": \"\",\r\n    \"isSourceComplaint\": 1,\r\n    \"sourceComplaintNo\": \"\",\r\n    \"sourceComplaintName\": \"\",\r\n    \"projectName\": \"\",\r\n    \"districtId\": 0,\r\n    \"divisionId\": 0,\r\n    \"coram\": 0,\r\n    \"complaintID\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchOrdersJudgementsAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchOrdersJudgementsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Statistics",
+					"item": [
+						{
+							"name": "FetchStatisticsHomeAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchStatisticsHomeAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchStatisticsHomeAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchStatisticsAsync Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"stateId\": 27,\r\n  \"districtId\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchStatisticsAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchStatisticsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Decryption",
+					"item": [
+						{
+							"name": "FetchAdvancedAgentsSearchEncryptedAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"encryptedText\": \"qtmvGdpsdlggg6SENshMPY9wHoLWRfr7Mbwh6LiowKCIEpL/duMVcmdWO3D6z/bcyM1uUIQR3hVnVjtw+s/23CIXiqPmRgk8YFlLRfso64uTBhGAnTbw1ab30W0zr7SG6SW86ViB2KVP5Y+LFtSc8OPFfLwNmdTA+ZvJLMEEO0ZebuPB6/pE0dmQU3LaTJKmuUTC3cVNb4MPMsc0GaXai3Fx1kP48vrUB5M4ultoXbSOfoRFz8TcvU4hFHpE+QRRWuxQYQHdTNV4CDWatbWXjidSnWK8YlaCmVyBTBit8SQuPQcw+fbRZIDfAgBTrPEN\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchAdvancedAgentsSearchEncryptedAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedAgentsSearchEncryptedAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Summary",
+					"item": [
+						{
+							"name": "FetchProjectSummaryAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"projectTypeId\": 0,\r\n  \"roleId\": 1,\r\n  \"projectName\": \"\",\r\n  \"promoterName\": \"\",\r\n  \"flag\": \"\",\r\n   \"pinCode\": \"\",\r\n  \"districtId\": 0,\r\n  \"stateId\": 0,\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10,\r\n  \"location\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectSummaryAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectSummaryAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectSummaryAsync Copy 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projRegistrationNo\": \"P51900000061\",\r\n  \"userId\": 98,\r\n  \"flag\": \"ShowAdditionalInfo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectSummaryAdditionalAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectSummaryAdditionalAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectExecutiveSummaryAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"roleID\": 1,\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 100,\r\n  \"projectTypeId\": 0,\r\n  \"projectName\": \"\",\r\n  \"promoterName\": \"\",\r\n  \"projRegistrationNo\": \"\",\r\n  \"agentRegistrationNo\": \"\",\r\n  \"pinCode\": \"\",\r\n  \"districtId\": 519,\r\n  \"divisionId\":6,\r\n  \"stateId\": 27,\r\n  \"location\": \"\",\r\n  \"isProjectRevoked\": 0,\r\n  \"completionDate\": \"\",\r\n  \"completionPeriod\": \"\",\r\n  \"carpetAreas\": \"\",\r\n  \"amenities\": \"\",\r\n  \"apartmentTypeIds\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectExecutiveSummaryAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectExecutiveSummaryAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectExecutiveSummaryAsync Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"roleID\": 1,\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 100,\r\n  \"projectTypeId\": 0,\r\n  \"projectName\": \"\",\r\n  \"promoterName\": \"\",\r\n  \"projRegistrationNo\": \"\",\r\n  \"agentRegistrationNo\": \"\",\r\n  \"pinCode\": \"\",\r\n  \"districtId\": 519,\r\n  \"divisionId\":6,\r\n  \"stateId\": 27,\r\n  \"location\": \"\",\r\n  \"isProjectRevoked\": 0,\r\n  \"completionDate\": \"\",\r\n  \"completionPeriod\": \"\",\r\n  \"carpetAreas\": \"\",\r\n  \"amenities\": \"\",\r\n  \"apartmentTypeIds\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectExecutiveSummaryAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectExecutiveSummaryAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectExecutiveSummaryAsync Copy 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projRegistrationNo\": \"P51900000030\",\r\n  \"flag\": \"ShowAdditionalInfo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectExecutiveSummaryAdditionalAsync",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectExecutiveSummaryAdditionalAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectExecutiveSummaryAsync Copy 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectExecutiveSummaryData?ProjectRegNo&DivisionId",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectExecutiveSummaryData"
+									],
+									"query": [
+										{
+											"key": "ProjectRegNo",
+											"value": null
+										},
+										{
+											"key": "DivisionId",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectExecutiveSummaryAsync Copy 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectExecutiveSummaryData?ProjectRegNo&DivisionId",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectExecutiveSummaryData"
+									],
+									"query": [
+										{
+											"key": "ProjectRegNo",
+											"value": null
+										},
+										{
+											"key": "DivisionId",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Test",
+			"item": [
+				{
+					"name": "Masters",
+					"item": [
+						{
+							"name": "GetState",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"LangID\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/GetState",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetState"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetDistricts",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"LangID\" : 1,\r\n    \"stateCode\":27\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/GetDistricts",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetDistricts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetTalukas",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"DistrictCode\": 525,\r\n    \"LangID\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/GetTalukaAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetTalukaAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetVillageAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"SubDistrictCode\": 4009,\r\n    \"LangID\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/GetVillageAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetVillageAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetProjectMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/GetProjectMasterAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetProjectMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetUnitMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/GetUnitMasterAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetUnitMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetApartmentMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/GetApartmentMasterAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetApartmentMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetCoramDetailsMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/GetCoramDetailsMasterAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetCoramDetailsMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAmenitiesMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/GetAmenitiesMasterAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetAmenitiesMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetComplainantMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/GetComplainantMasterAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetComplainantMasterAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "HomeSearch",
+					"item": [
+						{
+							"name": "FetchHomeProjectsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IsProjectRevoked\":0,\r\n    \"projectTypeId\": 12,\r\n    \"roleId\": 1,\r\n    \"MultiSearchdata\":\"\",\r\n    \"projectName\": \"\",\r\n    \"location\": \"\",\r\n    \"AgentRegistrationNo\": \"\",\r\n    \"apartmentTypeId\": 0,\r\n    \"completionDate\": \"31-12-2018\",\r\n    \"districtId\": 0,\r\n    \"stateId\": 0,\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchHomeProjectsAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchHomeProjectsAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchHomePromotersAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IsProjectRevoked\": 0,\r\n    \"projectTypeId\": 12,\r\n    \"roleId\": 1,\r\n    \"MultiSearchdata\": \"\",\r\n    \"name\": \"Urvashi\",\r\n    \"projRegistrationNo\": \"\",\r\n    \"projectName\": \"\",\r\n    \"locationName\": \"\",\r\n    \"completionDate\": \"\",\r\n    \"apartmentTypeIds\": [],\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchHomePromotersAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchHomePromotersAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchHomeAgentsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectTypeId\": 0,\r\n  \"roleId\": 2,\r\n  \"agentTypeId\": 0,\r\n  \"agentName\": \"\",\r\n  \"agentRegNo\": \"\",\r\n  \"agentNameOrRegNo\": \"\",\r\n  \"pincode\": \"\",\r\n  \"locationName\": \"\",\r\n  \"completionDate\": \"\",\r\n  \"projectName\": \"\",\r\n  \"projectRegistrationNo\": \"\",\r\n  \"projectNameRegNo\": \"\",\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchHomeAgentsAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchHomeAgentsAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchHomeComplaintsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"complaintNo\": \"CC033000000000001\",\r\n  \"projectName\": \"Shanti\",\r\n  \"coram\": 0,\r\n  \"completionDate\": \"\",\r\n  \"certiNo\": \"\",\r\n  \"complaintStatus\": \"\",\r\n  \"MultiSearchdata\":\"\",\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchHomeComplaintsAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchHomeComplaintsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AdvancedSearch",
+					"item": [
+						{
+							"name": "FetchAdvancedProjectsSearchAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IsProjectRevoked\": 0,\r\n    \"projectTypeId\": 0,\r\n    \"roleId\": 1,\r\n    \"projectName\": \"\",\r\n    \"promoterName\": \"\",\r\n    \"projRegistrationNo\": \"\",\r\n    \"agentRegistrationNo\": \"\",\r\n    \"pinCode\": \"\",\r\n    \"districtId\": 0,\r\n    \"stateId\": 0,\r\n    \"divisionIds\": [],\r\n    \"projectTypeIds\": [],\r\n    \"promoterNames\": [],\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 10,\r\n    \"completionDate\": \"\",\r\n    \"completionPeriod\": [\r\n        64\r\n    ],\r\n    \"location\": \"\",\r\n    \"carpetAreas\": [\r\n        {\r\n            \"min\": 4500,\r\n            \"max\": 50000\r\n        }\r\n    ],\r\n    \"completionPercentages\": [\r\n        {\r\n            \"min\": 0,\r\n            \"max\": 100\r\n        }\r\n    ],\r\n    \"apartmentTypeIds\": [],\r\n    \"amenities\": [\r\n        1,\r\n        2,\r\n        3,\r\n        4,\r\n        5,\r\n        6,\r\n        7,\r\n        8,\r\n        9,\r\n        10,\r\n        11,\r\n        12,\r\n        13,\r\n        14,\r\n        15\r\n    ],\r\n    \"agentName\": \"Sher\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchAdvancedProjectsSearchAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedProjectsSearchAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAdvancedPromoterSearchAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IsProjectRevoked\":false,\r\n    \"projectTypeId\": 12,\r\n    \"roleId\": 1,\r\n    \"name\": \"\",\r\n    \"projRegistrationNo\": \"\",\r\n    \"locationName\": \"\",\r\n    \"completionDate\": \"\",\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 10,\r\n    \"promoterNames\": [],\r\n    \"carpetAreas\": [{\"Min\":\"2000\", \"Max\":\"15000\"}],\r\n    \"completionPeriod\": [64,100],\r\n    \"apartmentTypeIds\": [1149,1150],\r\n    \"amenities\": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\r\n    \"agentName\": \"SHERLOCK HOLMES\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchAdvancedPromoterSearchAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedPromoterSearchAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAdvancedAgentSearchAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectTypeId\": 3,\r\n  \"roleId\": 2,\r\n  \"agentTypeId\": 0,\r\n  \"agentName\": \"\",\r\n  \"agentRegNo\": \"\",\r\n  \"agentNameOrRegNo\": \"\",\r\n  \"pincode\": \"\",\r\n  \"locationName\": \"\",\r\n  \"completionDate\": \"\",\r\n  \"projectName\": \"\",\r\n  \"projectRegistrationNo\": \"\",\r\n  \"projectNameRegNo\": \"\",\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10,\r\n \"carpetAreas\": [{\"Min\":\"4500\", \"Max\":\"50000\"}],\r\n  \"completionPeriod\": [10],\r\n  \"apartmentTypeIds\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchAdvancedAgentSearchAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedAgentSearchAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAdvancedComplaintSearchAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"complaintType\": 0,\r\n  \"complainantName\": \"jana\",\r\n  \"respondentName\": \"\",\r\n  \"location\": \"\",\r\n  \"complaintNo\": \"\",\r\n  \"projectName\": \"\",\r\n  \"coram\": 0,\r\n  \"completionDate\": \"\",\r\n  \"promoterName\": \"\",\r\n  \"flag\": \"Home\",\r\n  \"certiNo\": \"\",\r\n  \"complaintStatus\": \"\",\r\n  \"agentName\": \"\",\r\n  \"rullJudgeDate_From\": \"\",\r\n  \"ruleJudgeDate_To\": \"\",\r\n  \"order\": 0,\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchAdvancedComplaintSearchAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedComplaintSearchAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Complaints",
+					"item": [
+						{
+							"name": "FetchComplaintsProjectWiseAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectName\": \"\",\r\n  \"flag\": \"ProjectCount\",\r\n  \"division\": 0,\r\n  \"district\": 0,\r\n  \"pageindex\": 1,\r\n  \"pagesize\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchComplaintsProjectWiseCountAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsProjectWiseCountAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchComplaintsProjectWiseAsync Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectId\": 10157,\r\n  \"flag\": \"\",\r\n  \"district\": 529,\r\n   \"pageindex\": 1,\r\n  \"pagesize\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchComplaintsProjectWiseDetailsAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsProjectWiseDetailsAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchComplaintsPromoterWiseAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"promoterName\": \"\",\r\n  \"flag\": \"\",\r\n  \"division\": \"6\",\r\n  \"district\": \"529\",\r\n  \"pageindex\": 1,\r\n  \"pagesize\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchComplaintsPromoterWiseCountAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsPromoterWiseCountAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchComplaintsPromoterWiseAsync Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"\",\r\n  \"PromoterUserProfileId\": 76732,\r\n  \"District\": \"529\",\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchComplaintsPromoterWiseDetailsAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsPromoterWiseDetailsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Docs",
+					"item": [
+						{
+							"name": "FetchProjectsDocsCertificateAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocProjectCert\",\r\n  \"divisionId\": 5,\r\n  \"projectId\": 6\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchProjectsDocsCertificateAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectsDocsCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectsDocsExtCertificateAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocProjectExtCert\",\r\n  \"divisionId\": 4,\r\n  \"projectId\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchProjectsDocsExtCertificateAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectsDocsExtCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchComplaintsDocsCertificateAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocComplaintNonExecOrder\",\r\n  \"divisionId\": 3,\r\n  \"complaintId\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchComplaintsDocsCertificateAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsDocsCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAgentsDocsCertificateAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocAgentCert\",\r\n  \"divisionId\": 2,\r\n  \"projectId\": 10154\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchAgentsDocsCertificateAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAgentsDocsCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RTI",
+					"item": [
+						{
+							"name": "FetchRTIAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"pageindex\": 2,\r\n  \"pagesize\": 10,\r\n  \"rtiPublishedFromDate\": \"2017-01-01\",\r\n  \"rtiPublishedToDate\": \"2022-12-01\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchRTIAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchRTIAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchRTIDocs",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 11\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchRTIDocs",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchRTIDocs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CauseList",
+					"item": [
+						{
+							"name": "FetchDailyCauseListAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date\": \"2020-01-31\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchDailyCauseListAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchDailyCauseListAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchMonthlyCauseListAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"fromDate\": \"2020-01-31\",\r\n  \"toDate\": \"2022-12-14\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchMonthlyCauseListAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchMonthlyCauseListAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ProjectsOnMap",
+					"item": [
+						{
+							"name": "FetchProjectsOnMap",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"pageindex\": 1,\r\n  \"pagesize\": 10,\r\n  \"langId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchProjectsOnMap",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectsOnMap"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "OrdersJudgements",
+					"item": [
+						{
+							"name": "FetchOrdersRulingsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"type\": \"\",\r\n  \"projectName\": \"\",\r\n  \"complaintNo\": \"\",\r\n  \"complaintID\": 0,\r\n  \"respondentName\": \"\",\r\n  \"rullJudgeDate_From\": \"2020-12-14\",\r\n  \"ruleJudgeDate_To\": \"2022-12-14\",\r\n  \"pageindex\": 1,\r\n  \"pagesize\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchOrdersRulingsAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchOrdersRulingsAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchOrdersRulingMahareraAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"type\": \"\",\r\n  \"projectName\": \"\",\r\n  \"complaintNo\": \"\",\r\n  \"complaintID\": 0,\r\n  \"respondentName\": \"\",\r\n  \"rullJudgeDate_From\": \"2020-12-14\",\r\n  \"ruleJudgeDate_To\": \"2022-12-14\",\r\n  \"pageindex\": 1,\r\n  \"pagesize\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchOrdersRulingMahareraAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchOrdersRulingMahareraAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchOrdersJudgementsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"type\": \"\",\r\n  \"projectName\": \"\",\r\n  \"complaintNo\": \"\",\r\n  \"complaintID\": 0,\r\n  \"respondentName\": \"\",\r\n  \"rullJudgeDate_From\": \"2020-12-14\",\r\n  \"ruleJudgeDate_To\": \"2022-12-14\",\r\n  \"pageindex\": 1,\r\n  \"pagesize\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchOrdersJudgementsAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchOrdersJudgementsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Statistics",
+					"item": [
+						{
+							"name": "FetchStatisticsHomeAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchStatisticsHomeAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchStatisticsHomeAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchStatisticsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"stateId\": 27,\r\n  \"districtId\": 990\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchStatisticsAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchStatisticsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Decryption",
+					"item": [
+						{
+							"name": "FetchAdvancedAgentsSearchEncryptedAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"encryptedText\": \"qtmvGdpsdlggg6SENshMPY9wHoLWRfr7Mbwh6LiowKCIEpL/duMVcmdWO3D6z/bcyM1uUIQR3hVnVjtw+s/23CIXiqPmRgk8YFlLRfso64uTBhGAnTbw1ab30W0zr7SG6SW86ViB2KVP5Y+LFtSc8OPFfLwNmdTA+ZvJLMEEO0ZebuPB6/pE0dmQU3LaTJKmuUTC3cVNb4MPMsc0GaXai3Fx1kP48vrUB5M4ultoXbSOfoRFz8TcvU4hFHpE+QRRWuxQYQHdTNV4CDWatbWXjidSnWK8YlaCmVyBTBit8SQuPQcw+fbRZIDfAgBTrPEN\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchAdvancedAgentsSearchEncryptedAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedAgentsSearchEncryptedAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Summary",
+					"item": [
+						{
+							"name": "FetchProjectSummaryAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectTypeId\": 0,\r\n  \"roleId\": 1,\r\n  \"projectName\": \"\",\r\n  \"promoterName\": \"\",\r\n  \"flag\": \"\",\r\n  \"pinCode\": \"\",\r\n  \"districtId\": 0,\r\n  \"divisionId\": 0,\r\n  \"stateId\": 27,\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10,\r\n  \"location\": \"\",\r\n  \"IsProjectRevoked\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchProjectSummaryAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectSummaryAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectSummaryAsync Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projRegistrationNo\": \"P51900015103\",\r\n   \"userId\": 8042,\r\n  \"flag\": \"ShowAdditionalInfo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchProjectSummaryAdditionalAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectSummaryAdditionalAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectExecutiveSummaryAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"roleID\": 1,\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 100,\r\n  \"projectTypeId\": 0,\r\n  \"projectName\": \"\",\r\n  \"promoterName\": \"jad\",\r\n  \"projRegistrationNo\": \"\",\r\n  \"agentRegistrationNo\": \"\",\r\n  \"pinCode\": \"\",\r\n  \"districtId\": 0,\r\n  \"stateId\": 0,\r\n  \"location\": \"\",\r\n  \"isProjectRevoked\": \"\",\r\n  \"completionDate\": \"\",\r\n  \"completionPeriod\": \"\",\r\n  \"carpetAreas\": \"\",\r\n  \"amenities\": \"\",\r\n  \"apartmentTypeIds\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchProjectExecutiveSummaryAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectExecutiveSummaryAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectExecutiveAdditionalAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"roleID\": 1,\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 100,\r\n  \"projectTypeId\": 0,\r\n  \"projectName\": \"\",\r\n  \"promoterName\": \"jad\",\r\n  \"projRegistrationNo\": \"\",\r\n  \"agentRegistrationNo\": \"\",\r\n  \"pinCode\": \"\",\r\n  \"districtId\": 0,\r\n  \"stateId\": 0,\r\n  \"location\": \"\",\r\n  \"isProjectRevoked\": \"\",\r\n  \"completionDate\": \"\",\r\n  \"completionPeriod\": \"\",\r\n  \"carpetAreas\": \"\",\r\n  \"amenities\": \"\",\r\n  \"apartmentTypeIds\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchProjectExecutiveSummaryAdditionalAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectExecutiveSummaryAdditionalAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectExecutiveSummaryAsync Copy 5",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7087/api/Projects/FetchProjectExecutiveSummaryData?ProjectRegNo&DivisionId",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7087",
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectExecutiveSummaryData"
+									],
+									"query": [
+										{
+											"key": "ProjectRegNo",
+											"value": null
+										},
+										{
+											"key": "DivisionId",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "PROD",
+			"item": [
+				{
+					"name": "Masters",
+					"item": [
+						{
+							"name": "GetState",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"LangID\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/GetState",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetState"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetDistricts",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"statecode\": 27,\r\n  \"divisionId\" : 1,\r\n  \"langId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/GetDistricts",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetDistricts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetDivisions",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"LangID\" : 1,\r\n    \"stateCode\":27\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/GetDivisions",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetDivisions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetTalukas",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"DistrictCode\": 525,\r\n    \"LangID\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/GetTalukaAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetTalukaAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetVillageAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"SubDistrictCode\": 4009,\r\n    \"LangID\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/GetVillageAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetVillageAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetProjectMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/GetProjectMasterAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetProjectMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetUnitMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/GetUnitMasterAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetUnitMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetApartmentMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/GetApartmentMasterAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetApartmentMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetCoramDetailsMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/GetCoramDetailsMasterAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetCoramDetailsMasterAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAmenitiesMasterAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/GetAmenitiesMasterAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"GetAmenitiesMasterAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "HomeSearch",
+					"item": [
+						{
+							"name": "FetchHomeProjectsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IsProjectRevoked\":0,\r\n    \"projectTypeId\": 12,\r\n    \"roleId\": 1,\r\n    \"MultiSearchdata\":\"\",\r\n    \"projectName\": \"\",\r\n    \"location\": \"\",\r\n    \"AgentRegistrationNo\": \"\",\r\n    \"apartmentTypeId\": 0,\r\n    \"completionDate\": \"31-12-2018\",\r\n    \"districtId\": 0,\r\n    \"stateId\": 0,\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchHomeProjectsAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchHomeProjectsAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchHomePromotersAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"projectTypeId\": 12,\r\n    \"roleId\": 1,\r\n    \"name\": \"\",\r\n     \"MultiSearchdata\":\"\",\r\n      \"pinCode\": \"445203\",\r\n     \"projectName\": \"\",\r\n    \"location\": \"\",\r\n    \"LocationPinCode\": \"\",\r\n    \"projRegistrationNo\": \"\",\r\n    \"locationName\": \"\",\r\n    \"completionDate\": \"\",\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 10,\r\n    \"promoterNames\": [],\r\n    \"carpetAreas\": [{\"Min\":\"1000\", \"Max\":\"15000\"}],\r\n    \"completionPeriod\": [64,100],\r\n    \"apartmentTypeIds\": [],\r\n    \"amenities\": [],\r\n    \"agentName\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchHomePromotersAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchHomePromotersAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchHomeAgentsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectTypeId\": 0,\r\n  \"roleId\": 2,\r\n  \"agentTypeId\": 0,\r\n  \"agentName\": \"\",\r\n  \"agentRegNo\": \"\",\r\n  \"agentNameOrRegNo\": \"\",\r\n  \"pincode\": \"\",\r\n  \"locationName\": \"\",\r\n  \"completionDate\": \"\",\r\n  \"projectName\": \"\",\r\n  \"projectRegistrationNo\": \"\",\r\n  \"projectNameRegNo\": \"\",\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchHomeAgentsAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchHomeAgentsAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchHomeComplaintsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"complaintNo\": \"CC033000000000001\",\r\n  \"projectName\": \"Shanti\",\r\n  \"coram\": 0,\r\n  \"completionDate\": \"\",\r\n  \"certiNo\": \"\",\r\n  \"complaintStatus\": \"\",\r\n  \"MultiSearchdata\":\"\",\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchHomeComplaintsAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchHomeComplaintsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AdvancedSearch",
+					"item": [
+						{
+							"name": "FetchAdvancedProjectsSearchAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"IsProjectRevoked\": 0,\r\n    \"projectTypeId\": 0,\r\n    \"roleId\": 1,\r\n    \"projectName\": \"lodha\",\r\n    \"promoterName\": \"\",\r\n    \"projRegistrationNo\": \"\",\r\n    \"agentRegistrationNo\": \"\",\r\n    \"pinCode\": \"\",\r\n    \"districtId\": 0,\r\n    \"stateId\": 27,\r\n    \"divisionIds\": [],\r\n    \"projectTypeIds\": [],\r\n    \"promoterNames\": [],\r\n    \"pageIndex\": 1,\r\n    \"pageSize\": 10,\r\n    \"completionDate\": \"\",\r\n    \"completionPeriod\": [],\r\n    \"location\": \"400063\",\r\n    \"carpetAreas\": [],\r\n    \"completionPercentages\": [],\r\n    \"apartmentTypeIds\": [],\r\n    \"amenities\": [],\r\n    \"agentName\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchAdvancedProjectsSearchAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedProjectsSearchAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAdvancedPromoterSearchAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"projectTypeId\": 0,\r\n    \"roleId\": 1,\r\n    \"name\": \"\",\r\n    \"projRegistrationNo\": \"\",\r\n    \"locationName\": \"Konkan\",\r\n    \"pinCode\": \"400615\",\r\n    \"completionDate\": \"\",\r\n    \"PageIndex\": 1,\r\n    \"PageSize\": 10,\r\n    \"promoterNames\": [],\r\n    \"carpetAreas\": [],\r\n    \"completionPeriod\": [],\r\n    \"apartmentTypeIds\": [],\r\n    \"amenities\": [],\r\n    \"agentName\": \"\",\r\n    \"IsProjectRevoked\": 0,\r\n    \"DistrictId\": 0,\r\n    \"StateId\": 27,\r\n    \"divisionId\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchAdvancedPromoterSearchAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedPromoterSearchAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAdvancedAgentSearchAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectTypeId\": 0,\r\n  \"roleId\": 2,\r\n  \"agentTypeId\": 0,\r\n  \"agentName\": \"\",\r\n  \"agentRegNo\": \"\",\r\n  \"agentNameOrRegNo\": \"\",\r\n  \"pincode\": \"\",\r\n  \"districtId\": 0,\r\n  \"stateId\": 0,\r\n  \"talukaId\":0,\r\n  \"divisionId\": 0,\r\n  \"locationName\": \"\",\r\n  \"completionDate\": \"\",\r\n  \"projectName\": \"\",\r\n  \"projectRegistrationNo\": \"\",\r\n  \"projectNameRegNo\": \"\",\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10,\r\n  \"carpetAreas\": [],\r\n  \"completionPeriod\": [],\r\n  \"apartmentTypeIds\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchAdvancedAgentSearchAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedAgentSearchAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAdvancedComplaintSearchAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"0\",\r\n    \"complaintNo\": \"\",\r\n    \"certiNo\": \"\",\r\n    \"rullJudgeDate_From\": \"\",\r\n    \"ruleJudgeDate_To\": \"\",\r\n    \"complainantName\": \"\",\r\n    \"respondentName\": \"\",\r\n    \"pageindex\": 1,\r\n    \"pagesize\": 10,\r\n    \"state\": \"\",\r\n    \"isSourceComplaint\": 0,\r\n    \"isConcilliation\": 0,\r\n    \"sourceComplaintNo\": \"\",\r\n    \"sourceComplaintName\": \"\",\r\n    \"projectName\": \"\",\r\n    \"district\": 0,\r\n    \"division\": 0,\r\n    \"coram\": 0,\r\n    \"completionDate\": \"\",\r\n    \"complaintType\": 2,\r\n    \"order\": 0,\r\n    \"agentName\": \"\",\r\n    \"promoterName\": \"\",\r\n    \"flag\": \"Home\",\r\n    \"location\": \"\",\r\n    \"completionPeriod\": 0,\r\n    \"complaintStatus\": \"\",\r\n    \"complaintStatusId\": 0,\r\n    \"carpetAreaMin\": 0,\r\n    \"carpetAreaMax\": 0,\r\n    \"apartmentTypeId\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchAdvancedComplaintSearchAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedComplaintSearchAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Complaints",
+					"item": [
+						{
+							"name": "FetchComplaintsProjectWiseAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectName\": \"\",\r\n  \"flag\": \"ProjectCount\",\r\n  \"division\": 0,\r\n  \"district\": 519,\r\n  \"pageindex\": 1,\r\n  \"pagesize\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchComplaintsProjectWiseCountAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsProjectWiseCountAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchComplaintsProjectWiseDetailsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"projectId\": 0,\r\n    \"flag\": \"\",\r\n    \"district\": 0,\r\n    \"pageindex\": 1,\r\n    \"pagesize\": 20,\r\n    \"CertiNo\": \"P51800001120\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchComplaintsProjectWiseDetailsAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsProjectWiseDetailsAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchComplaintsPromoterWiseAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"promoterName\": \"\",\r\n  \"flag\": \"\",\r\n  \"division\": \"6\",\r\n  \"district\": \"529\",\r\n  \"pageindex\": 1,\r\n  \"pagesize\": 20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchComplaintsPromoterWiseCountAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsPromoterWiseCountAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchComplaintsPromoterWiseDetailsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"PromoterUserProfileId\": 0,\r\n  \"District\": \"0\",\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 100,\r\n  \"PromoterName\":\"AAradhya \"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchComplaintsPromoterWiseDetailsAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsPromoterWiseDetailsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Docs",
+					"item": [
+						{
+							"name": "FetchProjectsDocsCertificateAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocProjectCert\",\r\n  \"divisionId\": 5,\r\n  \"projectId\": 11342\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchProjectsDocsCertificateAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectsDocsCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectsDocsExtCertificateAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocProjectExtCert\",\r\n  \"divisionId\": 4,\r\n  \"projectId\": 11342\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchProjectsDocsExtCertificateAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectsDocsExtCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectsDocsExtCertificateAsync Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocProjectHSMViewCert\",\r\n  \"divisionId\": 6,\r\n  \"projectId\": 25\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchProjectsDocsExtCertificateAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectsDocsExtCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchComplaintsDocsCertificateAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocComplaintNonExecOrder\",\r\n  \"divisionId\": 3,\r\n  \"complaintId\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchComplaintsDocsCertificateAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchComplaintsDocsCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAgentsDocsCertificateAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocAgentCert\",\r\n  \"divisionId\": 6,\r\n  \"AgentId\": 120827\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchAgentsDocsCertificateAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAgentsDocsCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchAgentsDocsCertificateAsync Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"flag\": \"DocAgentViewCert\",\r\n  \"divisionId\": 6,\r\n  \"agentId\": 120827\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchAgentsDocsCertificateAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAgentsDocsCertificateAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RTI",
+					"item": [
+						{
+							"name": "FetchRTIAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"pageindex\": 2,\r\n  \"pagesize\": 10,\r\n  \"rtiPublishedFromDate\": \"2017-01-01\",\r\n  \"rtiPublishedToDate\": \"2022-12-01\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchRTIAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchRTIAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchRTIDocs",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 11\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchRTIDocs",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchRTIDocs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CauseList",
+					"item": [
+						{
+							"name": "FetchDailyCauseListAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date\": \"2023-03-13\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchDailyCauseListAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchDailyCauseListAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchMonthlyCauseListAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"fromDate\": \"2023-03-01\",\r\n  \"toDate\": \"2023-03-15\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchMonthlyCauseListAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchMonthlyCauseListAsync"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "FetchMonthlyCauseListAsync",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"fromDate\": \"2023-08-29\",\r\n  \"toDate\": \"2023-08-29\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://maharera2.mahait.org/api/Projects/FetchMonthlyCauseListAsync",
+											"protocol": "http",
+											"host": [
+												"maharera2",
+												"mahait",
+												"org"
+											],
+											"path": [
+												"api",
+												"Projects",
+												"FetchMonthlyCauseListAsync"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "HTTP strict transport security",
+											"value": "max-age=604800; includesubdomains"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": ": nosniff"
+										},
+										{
+											"key": "x-frame-options",
+											"value": ": sameorigin"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": ": 1; mode=block"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 29 Aug 2023 06:41:51 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"totalCount\": 57,\n        \"responseCode\": 1000,\n        \"responseMesg\": \"Able to fetch the data records\"\n    },\n    {\n        \"complaintType\": \"Complaint Causelist\",\n        \"data\": [\n            {\n                \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                \"data\": [\n                    {\n                        \"srNo\": 1,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC005000000106398\",\n                        \"registrationNo\": \"P52100003174\",\n                        \"complainantName\": \"Francis Pegado\",\n                        \"nameofrespondent\": \"Keshav Vitthal Sonawne\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 5,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 205320,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 2,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000194330\",\n                        \"registrationNo\": \"P51800006729\",\n                        \"complainantName\": \"Pradeep Pant & Yogita Pant\",\n                        \"nameofrespondent\": \"Reddy Builders & Developers\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201805,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 3,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000198933\",\n                        \"registrationNo\": \"P51800006653\",\n                        \"complainantName\": \"ATUL SHIRODKAR\",\n                        \"nameofrespondent\": \"AMARDEEP CONSTRUCTIONS\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201816,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 4,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000198934\",\n                        \"registrationNo\": \"P51800006653\",\n                        \"complainantName\": \"ATUL SHIRODKAR\",\n                        \"nameofrespondent\": \"AMARDEEP CONSTRUCTIONS\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201817,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 5,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000198937\",\n                        \"registrationNo\": \"P51800006653\",\n                        \"complainantName\": \"Manoj Desai\",\n                        \"nameofrespondent\": \"AMARDEEP CONSTRUCTIONS\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201818,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 6,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000209390\",\n                        \"registrationNo\": \"P51900002867\",\n                        \"complainantName\": \"Dr. Reshma Jaydeep Palep and Dr. Jaydeep H. Palep\",\n                        \"nameofrespondent\": \"AVARSEKAR REALTY PRIVATE LIMITED\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201809,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 7,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000209761\",\n                        \"registrationNo\": \"P51700003212\",\n                        \"complainantName\": \"Vinod Maruti Kakade\",\n                        \"nameofrespondent\": \"Rajeev Jain\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 205530,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 8,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000210126\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"Jayesh Joma Bhoir\",\n                        \"nameofrespondent\": \"Sheltrex Karjat Private Limited\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201825,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 9,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000241329\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"Rakesh Gangaram Kayithi\",\n                        \"nameofrespondent\": \"Sheltrex Karjat Pvt. Ltd.\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201826,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 10,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000241330\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"Ali Akbar Mukhi\",\n                        \"nameofrespondent\": \"Sheltrex Karjat Pvt. Ltd.\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201827,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 11,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000302891\",\n                        \"registrationNo\": \"P51900002867\",\n                        \"complainantName\": \"Avarsekar Realty Private Limited\",\n                        \"nameofrespondent\": \"Dr Reshma Jaydeep Palep and Mr. Jaydeep Palep\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201811,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 12,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000303568\",\n                        \"registrationNo\": \"P51800006653\",\n                        \"complainantName\": \"AjitKumar Birendranath Ojha\",\n                        \"nameofrespondent\": \"M/s Amardeep Constructions\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201819,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 13,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000303745\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"VEERBHADRAN NARAYANAN NAIR\",\n                        \"nameofrespondent\": \"SHELTREX SMART PHONE CITY PROJECT 2 PHASE 1\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201828,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 14,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000303748\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"VEERBHADRAN NARAYANAN NAIR\",\n                        \"nameofrespondent\": \"SHELTREX SMART PHONE CITY PROJECT 2 PHASE 1\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201829,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 15,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000333777\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"BRIJESH VINOD GUPTA\",\n                        \"nameofrespondent\": \"SHELTREX KARJAT PRIVATE LIMITED\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201830,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 16,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC005000000106446\",\n                        \"registrationNo\": \"P52100014516\",\n                        \"complainantName\": \"Azhar Siraj Qureshi\",\n                        \"nameofrespondent\": \"Surburbia Estate (Abisky -Ritkriti))\",\n                        \"hearingDate\": \"29/08/2023 @ 12:00 PM\",\n                        \"divisionid\": 5,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 205322,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 17,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC005000000106514\",\n                        \"registrationNo\": \"P52100012338\",\n                        \"complainantName\": \"Kaizen Co-operative Housing Society Ltd.,\",\n                        \"nameofrespondent\": \"Smile Housing\",\n                        \"hearingDate\": \"29/08/2023 @ 12:00 PM\",\n                        \"divisionid\": 5,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 205323,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 18,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC005000000106517\",\n                        \"registrationNo\": \"P52100002574\",\n                        \"complainantName\": \"Mahesh Moolchandani\",\n                        \"nameofrespondent\": \"Subhash Sitaram Goel\",\n                        \"hearingDate\": \"29/08/2023 @ 12:00 PM\",\n                        \"divisionid\": 5,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 205324,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 19,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000197131\",\n                        \"registrationNo\": \"P51700008485\",\n                        \"complainantName\": \"Soham Estates\",\n                        \"nameofrespondent\": \"Chandrakant Shah\",\n                        \"hearingDate\": \"29/08/2023 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 204229,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 20,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000197132\",\n                        \"registrationNo\": \"P51700008485\",\n                        \"complainantName\": \"Soham Estates\",\n                        \"nameofrespondent\": \"M/s CVS Infrastructure Pvt Ltd\",\n                        \"hearingDate\": \"29/08/2023 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 204230,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 21,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000209423\",\n                        \"registrationNo\": \"P51700019157\",\n                        \"complainantName\": \"Hemant Surendra Jain alias Hemant Kumar Jain\",\n                        \"nameofrespondent\": \"M/s Shrutika Construction through Sandesh Shamsundar Sable\",\n                        \"hearingDate\": \"29/08/2023 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 201813,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 22,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000209512\",\n                        \"registrationNo\": \"P51700019157\",\n                        \"complainantName\": \"Rahul Khanchandani\",\n                        \"nameofrespondent\": \"M/s Shrutika Construction through its sole proprietor Sandesh Shamsundar Sable\",\n                        \"hearingDate\": \"29/08/2023 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 201814,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 23,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000209555\",\n                        \"registrationNo\": \"P51700019157\",\n                        \"complainantName\": \"Varun Khanchandani\",\n                        \"nameofrespondent\": \"M/s Shrutika Construction through its Proprietor Sandesh Shamsundar Sable\",\n                        \"hearingDate\": \"29/08/2023 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 201815,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 24,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000209681\",\n                        \"registrationNo\": \"P51700008949\",\n                        \"complainantName\": \"Anupama Amresh sharma\",\n                        \"nameofrespondent\": \"Ram Developers\",\n                        \"hearingDate\": \"29/08/2023 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 205321,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 25,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC005000000106521\",\n                        \"registrationNo\": \"P52100000926\",\n                        \"complainantName\": \"Vinay Jithendra Korlepara\",\n                        \"nameofrespondent\": \"Neo Pharma Private Limited Through its Director Mr. Oswal Sangeet Hiralal\",\n                        \"hearingDate\": \"29/08/2023 @ 01:00 PM\",\n                        \"divisionid\": 5,\n                        \"hearingTime\": \"01:00 PM\",\n                        \"id\": 205529,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 26,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000209693\",\n                        \"registrationNo\": \"P51700007118\",\n                        \"complainantName\": \"Mr Chetan Barku Solse & 9 others\",\n                        \"nameofrespondent\": \"M/S Shri. Balaji Construction\",\n                        \"hearingDate\": \"29/08/2023 @ 01:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"01:00 PM\",\n                        \"id\": 205528,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 27,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000210126\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"Jayesh Joma Bhoir\",\n                        \"nameofrespondent\": \"Sheltrex Karjat Private Limited\",\n                        \"hearingDate\": \"29/08/2023 @ 01:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"01:00 PM\",\n                        \"id\": 205314,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 28,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000241329\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"Rakesh Gangaram Kayithi\",\n                        \"nameofrespondent\": \"Sheltrex Karjat Pvt. Ltd.\",\n                        \"hearingDate\": \"29/08/2023 @ 01:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"01:00 PM\",\n                        \"id\": 205315,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 29,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000241330\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"Ali Akbar Mukhi\",\n                        \"nameofrespondent\": \"Sheltrex Karjat Pvt. Ltd.\",\n                        \"hearingDate\": \"29/08/2023 @ 01:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"01:00 PM\",\n                        \"id\": 205316,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 30,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000303375\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"Swapnil  Chinchole\",\n                        \"nameofrespondent\": \"Sheltrex Karjat Pvt. Ltd.(Suresh Singh)\",\n                        \"hearingDate\": \"29/08/2023 @ 01:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"01:00 PM\",\n                        \"id\": 205311,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 31,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000303745\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"VEERBHADRAN NARAYANAN NAIR\",\n                        \"nameofrespondent\": \"SHELTREX SMART PHONE CITY PROJECT 2 PHASE 1\",\n                        \"hearingDate\": \"29/08/2023 @ 01:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"01:00 PM\",\n                        \"id\": 205317,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 32,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000303748\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"VEERBHADRAN NARAYANAN NAIR\",\n                        \"nameofrespondent\": \"SHELTREX SMART PHONE CITY PROJECT 2 PHASE 1\",\n                        \"hearingDate\": \"29/08/2023 @ 01:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"01:00 PM\",\n                        \"id\": 205318,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 33,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000333777\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"BRIJESH VINOD GUPTA\",\n                        \"nameofrespondent\": \"SHELTREX KARJAT PRIVATE LIMITED\",\n                        \"hearingDate\": \"29/08/2023 @ 01:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"01:00 PM\",\n                        \"id\": 205319,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 34,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000334141\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"Prakash Subrao Mali\",\n                        \"nameofrespondent\": \"Sheltrex Karjat Pvt Ltd\",\n                        \"hearingDate\": \"29/08/2023 @ 01:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"01:00 PM\",\n                        \"id\": 205312,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 35,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000395522\",\n                        \"registrationNo\": \"P51800012307\",\n                        \"complainantName\": \"DATTARAM JANU KUDEKAR\",\n                        \"nameofrespondent\": \"Sheltrex Karjat Private Limited\",\n                        \"hearingDate\": \"29/08/2023 @ 01:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"01:00 PM\",\n                        \"id\": 205313,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47887,\n                        \"coramName\": \"Hon’ble Shri. Mahesh Pathak, Member, MahaRERA\",\n                        \"totalCount\": 57\n                    }\n                ]\n            },\n            {\n                \"coramName\": \"Hon'ble Adjudicating officer Mr. Ashok Alaspurkar\",\n                \"data\": [\n                    {\n                        \"srNo\": 1,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000023888\",\n                        \"registrationNo\": \"P51800001041\",\n                        \"complainantName\": \"Ashok Kumar Upadhyay\",\n                        \"nameofrespondent\": \"Rare Townships Private Limited\",\n                        \"hearingDate\": \"2023-08-29 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 21750,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 406933,\n                        \"coramName\": \"Hon'ble Adjudicating officer Mr. Ashok Alaspurkar\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 2,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000068145\",\n                        \"registrationNo\": \"P51800003590\",\n                        \"complainantName\": \"Rishi Chintaman Mali\",\n                        \"nameofrespondent\": \"Keystone Realtors Pvt. Ltd.\",\n                        \"hearingDate\": \"2023-08-29 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 21748,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 406933,\n                        \"coramName\": \"Hon'ble Adjudicating officer Mr. Ashok Alaspurkar\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 3,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000090042\",\n                        \"registrationNo\": \"P99000011896\",\n                        \"complainantName\": \"Sanju Shiv Kumar Singh\",\n                        \"nameofrespondent\": \"KARRM BRAHMAANDH\",\n                        \"hearingDate\": \"2023-08-29 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 21749,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 406933,\n                        \"coramName\": \"Hon'ble Adjudicating officer Mr. Ashok Alaspurkar\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 4,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000193660\",\n                        \"registrationNo\": \"P51800000956\",\n                        \"complainantName\": \"Kumar Anish Singh and Nikki Anish Singh (maiden name Kavita Tejwani)\",\n                        \"nameofrespondent\": \"Spenta Enclave Private Limited\",\n                        \"hearingDate\": \"2023-08-29 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 21877,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 406933,\n                        \"coramName\": \"Hon'ble Adjudicating officer Mr. Ashok Alaspurkar\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 5,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000195024\",\n                        \"registrationNo\": \"P51800000947\",\n                        \"complainantName\": \"Yogendrasinh Yashvantsinh Vansia HUF\",\n                        \"nameofrespondent\": \"Ekta Everglade Homes Pvt Ltd\",\n                        \"hearingDate\": \"2023-08-29 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 21879,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 406933,\n                        \"coramName\": \"Hon'ble Adjudicating officer Mr. Ashok Alaspurkar\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 6,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000195878\",\n                        \"registrationNo\": \"P51800013105\",\n                        \"complainantName\": \"Ketan Indravadan Bhagat\",\n                        \"nameofrespondent\": \"Kamala Mills Limited\",\n                        \"hearingDate\": \"2023-08-29 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 21758,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 406933,\n                        \"coramName\": \"Hon'ble Adjudicating officer Mr. Ashok Alaspurkar\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 7,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000195878\",\n                        \"registrationNo\": \"P51800013105\",\n                        \"complainantName\": \"Ketan Indravadan Bhagat\",\n                        \"nameofrespondent\": \"Kamala Mills Limited\",\n                        \"hearingDate\": \"2023-08-29 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 21759,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 406933,\n                        \"coramName\": \"Hon'ble Adjudicating officer Mr. Ashok Alaspurkar\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 8,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000198450\",\n                        \"registrationNo\": \"P51800010463\",\n                        \"complainantName\": \"Mukesh Agrawal\",\n                        \"nameofrespondent\": \"Era Realtors Private Limited and Anr\",\n                        \"hearingDate\": \"2023-08-29 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 21813,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 406933,\n                        \"coramName\": \"Hon'ble Adjudicating officer Mr. Ashok Alaspurkar\",\n                        \"totalCount\": 57\n                    }\n                ]\n            },\n            {\n                \"coramName\": \"Hon’ble Shri. Ajoy Mehta, Chairperson, MahaRERA\",\n                \"data\": [\n                    {\n                        \"srNo\": 1,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC005000000053899\",\n                        \"registrationNo\": \"P52100007401\",\n                        \"complainantName\": \"Prabhjot Singh Bhatia\",\n                        \"nameofrespondent\": \"Kul Developers Private Limited Through Its Authorised Signatory Indarmal S Gandhi\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 5,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201583,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47886,\n                        \"coramName\": \"Hon’ble Shri. Ajoy Mehta, Chairperson, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 2,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC005000000064481\",\n                        \"registrationNo\": \"P52100007384\",\n                        \"complainantName\": \"Himanshu Prakash\",\n                        \"nameofrespondent\": \"Ashdan Developers Pvt Ltd\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 5,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201582,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47886,\n                        \"coramName\": \"Hon’ble Shri. Ajoy Mehta, Chairperson, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 3,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC005000000137155\",\n                        \"registrationNo\": \"P52100007384\",\n                        \"complainantName\": \"Ankit  Garg\",\n                        \"nameofrespondent\": \"Ashdan Developers Pvt Ltd\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 5,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201581,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47886,\n                        \"coramName\": \"Hon’ble Shri. Ajoy Mehta, Chairperson, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 4,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC005000000157283\",\n                        \"registrationNo\": \"P52100007401\",\n                        \"complainantName\": \"sharvan  karnani\",\n                        \"nameofrespondent\": \"VTP REALTY\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 5,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201580,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47886,\n                        \"coramName\": \"Hon’ble Shri. Ajoy Mehta, Chairperson, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 5,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000193255\",\n                        \"registrationNo\": \"P51700015176\",\n                        \"complainantName\": \"The Bombay Postal C.H.S. Ltd.\",\n                        \"nameofrespondent\": \"M/s. Gaurang Associates\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201575,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47886,\n                        \"coramName\": \"Hon’ble Shri. Ajoy Mehta, Chairperson, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 6,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000195100\",\n                        \"registrationNo\": \"P51800020823\",\n                        \"complainantName\": \"Prathmesh Bhor\",\n                        \"nameofrespondent\": \"Midas Bhoomi Harmony\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201766,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47886,\n                        \"coramName\": \"Hon’ble Shri. Ajoy Mehta, Chairperson, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 7,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000209360\",\n                        \"registrationNo\": \"P51700015176\",\n                        \"complainantName\": \"RATISH ANANT MHATRE\",\n                        \"nameofrespondent\": \"M/s GAURANG ASSOCIATES\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201576,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47886,\n                        \"coramName\": \"Hon’ble Shri. Ajoy Mehta, Chairperson, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 8,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000209365\",\n                        \"registrationNo\": \"P51700015176\",\n                        \"complainantName\": \"AJAY ANANT VAIDYA\",\n                        \"nameofrespondent\": \"M/S. GAURANG ASSOCIATES\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201578,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47886,\n                        \"coramName\": \"Hon’ble Shri. Ajoy Mehta, Chairperson, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 9,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000209374\",\n                        \"registrationNo\": \"P51700015176\",\n                        \"complainantName\": \"VILAS LAXMAN DHARMADHIKARI\",\n                        \"nameofrespondent\": \"M/s GAURANG ASSOCIATES\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201577,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47886,\n                        \"coramName\": \"Hon’ble Shri. Ajoy Mehta, Chairperson, MahaRERA\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 10,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000209387\",\n                        \"registrationNo\": \"P51700015176\",\n                        \"complainantName\": \"YASHWANT VITHALRAO CHAVAN\",\n                        \"nameofrespondent\": \"M/s GAURANG ASSOCIATES\",\n                        \"hearingDate\": \"29/08/2023 @ 11:00 AM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"11:00 AM\",\n                        \"id\": 201579,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 47886,\n                        \"coramName\": \"Hon’ble Shri. Ajoy Mehta, Chairperson, MahaRERA\",\n                        \"totalCount\": 57\n                    }\n                ]\n            },\n            {\n                \"coramName\": \"MumbaiBench6\",\n                \"data\": [\n                    {\n                        \"srNo\": 1,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000303517\",\n                        \"registrationNo\": \"P51800000579\",\n                        \"complainantName\": \"Vijay Lata  Jain\",\n                        \"nameofrespondent\": \"Kiyana Ventures LLP\",\n                        \"hearingDate\": \"29/08/2023 @ 12:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:00 PM\",\n                        \"id\": 205071,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 378763,\n                        \"coramName\": \"MumbaiBench6\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 2,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000303621\",\n                        \"registrationNo\": \"P51800004278\",\n                        \"complainantName\": \"sonali  desai\",\n                        \"nameofrespondent\": \"AAP Realtors Ltd.\",\n                        \"hearingDate\": \"29/08/2023 @ 12:30 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"12:30 PM\",\n                        \"id\": 205072,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 378763,\n                        \"coramName\": \"MumbaiBench6\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 3,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000333839\",\n                        \"registrationNo\": \"P51800005086\",\n                        \"complainantName\": \"Mr Rongom Tagore Mukherji\",\n                        \"nameofrespondent\": \"Paradigm Evolvers LLP\",\n                        \"hearingDate\": \"29/08/2023 @ 01:00 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"01:00 PM\",\n                        \"id\": 205073,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 378763,\n                        \"coramName\": \"MumbaiBench6\",\n                        \"totalCount\": 57\n                    },\n                    {\n                        \"srNo\": 4,\n                        \"complaintType\": \"Complaint Causelist\",\n                        \"complaintNumber\": \"CC006000000375273\",\n                        \"registrationNo\": \"P51900008204\",\n                        \"complainantName\": \"ashish  agarwal\",\n                        \"nameofrespondent\": \"lokhandwala kataria constructions pvt ltd\",\n                        \"hearingDate\": \"29/08/2023 @ 01:30 PM\",\n                        \"divisionid\": 6,\n                        \"hearingTime\": \"01:30 PM\",\n                        \"id\": 205074,\n                        \"stage\": \"For Appearance\",\n                        \"coramID\": 378763,\n                        \"coramName\": \"MumbaiBench6\",\n                        \"totalCount\": 57\n                    }\n                ]\n            }\n        ]\n    }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "ProjectsOnMap",
+					"item": [
+						{
+							"name": "FetchProjectsOnMap",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"pageindex\": 1,\r\n  \"pagesize\": 10,\r\n  \"langId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchProjectsOnMap",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectsOnMap"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "OrdersJudgements",
+					"item": [
+						{
+							"name": "FetchOrdersRulingsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"2\",\r\n    \"complaintNo\": \"\",\r\n    \"certiNo\": \"\",\r\n    \"rullJudgeDate_From\": \"2023-01-01\",\r\n    \"ruleJudgeDate_To\": \"2023-03-20\",\r\n    \"complainantName\": \"\",\r\n    \"respondentName\": \"\",\r\n    \"pageindex\": 1,\r\n    \"pagesize\": 5,\r\n    \"state\": \"\",\r\n    \"isSourceComplaint\": 0,\r\n    \"sourceComplaintNo\": \"\",\r\n    \"sourceComplaintName\": \"\",\r\n    \"projectName\": \"\",\r\n    \"district\": 0,\r\n    \"division\": 0,\r\n    \"coram\": 0,\r\n    \"complaintID\": 0,\r\n    \"orderType\": 59\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchOrdersRulingsAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchOrdersRulingsAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchOrdersRulingMahareraAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"\",\r\n    \"complaintNo\": \"\",\r\n    \"certiNo\": \"\",\r\n    \"rullJudgeDate_From\": \"2023-01-01\",\r\n    \"ruleJudgeDate_To\": \"2023-03-14\",\r\n    \"complainantName\": \"\",\r\n    \"respondentName\": \"\",\r\n    \"pageindex\": 1,\r\n    \"pagesize\": 10,\r\n    \"state\": \"\",\r\n    \"isSourceComplaint\": 0,\r\n    \"sourceComplaintNo\": \"\",\r\n    \"sourceComplaintName\": \"\",\r\n    \"projectName\": \"\",\r\n    \"district\": 0,\r\n    \"division\": 0,\r\n    \"coram\": 0,\r\n    \"complaintID\": 0,\r\n        \"orderType\": 59\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchOrdersRulingMahareraAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchOrdersRulingMahareraAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchOrdersJudgementsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"\",\r\n    \"complaintNo\": \"\",\r\n    \"certiNo\": \"\",\r\n    \"rullJudgeDate_From\": \"2023-01-01\",\r\n    \"ruleJudgeDate_To\": \"2023-03-14\",\r\n    \"complainantName\": \"\",\r\n    \"respondentName\": \"\",\r\n    \"pageindex\": 1,\r\n    \"pagesize\": 10,\r\n    \"state\": \"\",\r\n    \"isSourceComplaint\": 0,\r\n    \"sourceComplaintNo\": \"\",\r\n    \"sourceComplaintName\": \"\",\r\n    \"projectName\": \"\",\r\n    \"district\": 0,\r\n    \"division\": 0,\r\n    \"coram\": 0,\r\n    \"complaintID\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchOrdersJudgementsAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchOrdersJudgementsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Statistics",
+					"item": [
+						{
+							"name": "FetchStatisticsHomeAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchStatisticsHomeAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchStatisticsHomeAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchStatisticsAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"stateId\": 27,\r\n  \"districtId\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchStatisticsAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchStatisticsAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Decryption",
+					"item": [
+						{
+							"name": "FetchAdvancedAgentsSearchEncryptedAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"encryptedText\": \"qtmvGdpsdlggg6SENshMPY9wHoLWRfr7Mbwh6LiowKCIEpL/duMVcmdWO3D6z/bcyM1uUIQR3hVnVjtw+s/23CIXiqPmRgk8YFlLRfso64uTBhGAnTbw1ab30W0zr7SG6SW86ViB2KVP5Y+LFtSc8OPFfLwNmdTA+ZvJLMEEO0ZebuPB6/pE0dmQU3LaTJKmuUTC3cVNb4MPMsc0GaXai3Fx1kP48vrUB5M4ultoXbSOfoRFz8TcvU4hFHpE+QRRWuxQYQHdTNV4CDWatbWXjidSnWK8YlaCmVyBTBit8SQuPQcw+fbRZIDfAgBTrPEN\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://mahareraapi.mahaitgov.in/api/Projects/FetchAdvancedAgentsSearchEncryptedAsync",
+									"protocol": "http",
+									"host": [
+										"mahareraapi",
+										"mahaitgov",
+										"in"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchAdvancedAgentsSearchEncryptedAsync"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Summary",
+					"item": [
+						{
+							"name": "FetchProjectSummaryAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projectTypeId\": 0,\r\n  \"roleId\": 1,\r\n  \"projectName\": \"L\",\r\n  \"promoterName\": \"\",\r\n  \"flag\": \"\",\r\n  \"pinCode\": \"\",\r\n  \"districtId\": 0,\r\n  \"divisionId\": 0,\r\n  \"stateId\": 27,\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 10,\r\n  \"location\": \"\",\r\n  \"IsProjectRevoked\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchProjectSummaryAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectSummaryAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectSummaryAsync Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projRegistrationNo\": \"P51900015103\",\r\n   \"userId\": 8042,\r\n  \"flag\": \"ShowAdditionalInfo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchProjectSummaryAdditionalAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectSummaryAdditionalAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectExecutiveSummaryAsync",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"roleID\": 1,\r\n  \"pageIndex\": 1,\r\n  \"pageSize\": 100,\r\n  \"projectTypeId\": 0,\r\n  \"projectName\": \"\",\r\n  \"promoterName\": \"\",\r\n  \"projRegistrationNo\": \"\",\r\n  \"agentRegistrationNo\": \"\",\r\n  \"pinCode\": \"\",\r\n  \"districtId\": 519,\r\n  \"divisionId\":6,\r\n  \"stateId\": 27,\r\n  \"location\": \"\",\r\n  \"isProjectRevoked\": 0,\r\n  \"completionDate\": \"\",\r\n  \"completionPeriod\": \"\",\r\n  \"carpetAreas\": \"\",\r\n  \"amenities\": \"\",\r\n  \"apartmentTypeIds\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchProjectExecutiveSummaryAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectExecutiveSummaryAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectExecutiveSummaryAsync Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"projRegistrationNo\": \"P51900002789\",\r\n  \"flag\": \"ShowAdditionalInfo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchProjectExecutiveSummaryAdditionalAsync",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectExecutiveSummaryAdditionalAsync"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FetchProjectExecutiveSummaryAsync Copy 6",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"ProjectRegNo\": \"P51900002789\",\r\n  \"DivisionId\": 6\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://maharera2.mahait.org/api/Projects/FetchProjectExecutiveSummaryData",
+									"protocol": "http",
+									"host": [
+										"maharera2",
+										"mahait",
+										"org"
+									],
+									"path": [
+										"api",
+										"Projects",
+										"FetchProjectExecutiveSummaryData"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
